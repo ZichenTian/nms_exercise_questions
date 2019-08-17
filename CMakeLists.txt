@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(nms)
+find_package(OpenCV REQUIRED)
+add_executable(nms main.cpp nms.cpp)
+target_link_libraries(nms ${OpenCV_LIBS})
